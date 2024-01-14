@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* This is the CSS code to style the HTML elements */
+        body {
+            background-color: lightblue; /* Set the background color of the page */
+            font-family: Arial, sans-serif; /* Set the font of the text */
+        }
+
+        .container {
+            width: 80%; /* Set the width of the container */
+            margin: 0 auto; /* Center the container horizontally */
+        }
+
+        .buttons {
+            display: flex; /* Use flexbox layout for the buttons */
+            justify-content: center; /* Align the buttons horizontally */
+            align-items: center; /* Align the buttons vertically */
+            height: 100vh; /* Set the height of the buttons container to fill the viewport */
+        }
+
+        .button {
+            width: 200px; /* Set the width of each button */
+            height: 50px; /* Set the height of each button */
+            margin: 10px; /* Add some margin around each button */
+            border: none; /* Remove the default border of the button */
+            border-radius: 10px; /* Make the corners of the button rounded */
+            color: white; /* Set the text color of the button to white */
+            font-size: 20px; /* Set the font size of the button text */
+            cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
+        }
+
+        .button:hover {
+            transform: scale(1.1); /* Make the button slightly larger when hovering over it */
+            box-shadow: 0 0 10px black; /* Add a shadow effect to the button when hovering over it */
+        }
+
+        .faculty {
+            background-color: green; /* Set the background color of the faculty button to green */
+        }
+
+        .student {
+            background-color: blue; /* Set the background color of the student button to blue */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="buttons">
+            <button class="button faculty">Faculty Login</button> <!-- This is the faculty button -->
+            <button class="button student" onclick="studentLogin()">Student Login</button>
+ <!-- This is the student button -->
+        </div>
+    </div>
+</body>
+<script>
+
+    function studentLogin() {
+        window.location.href = "student.html"; // Change the URL to student.html
+    }
+    
+</script>
+</html>

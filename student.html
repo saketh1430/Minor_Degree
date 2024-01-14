@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* This is the CSS code to style the HTML elements */
+        body {
+            background-color: lightblue; /* Set the background color of the page */
+            font-family: Arial, sans-serif; /* Set the font of the text */
+        }
+
+        .container {
+            width: 80%; /* Set the width of the container */
+            margin: 0 auto; /* Center the container horizontally */
+        }
+
+        .search {
+            display: flex; /* Use flexbox layout for the search bar and button */
+            justify-content: center; /* Align the search bar and button horizontally */
+            align-items: center; /* Align the search bar and button vertically */
+            height: 100vh; /* Set the height of the search container to fill the viewport */
+        }
+
+        .search-bar {
+            width: 400px; /* Set the width of the search bar */
+            height: 40px; /* Set the height of the search bar */
+            padding: 10px; /* Add some padding inside the search bar */
+            border: none; /* Remove the default border of the search bar */
+            border-radius: 20px; /* Make the corners of the search bar rounded */
+            font-size: 18px; /* Set the font size of the search text */
+        }
+
+        .search-button {
+            width: 100px; /* Set the width of the search button */
+            height: 40px; /* Set the height of the search button */
+            margin-left: 10px; /* Add some margin between the search bar and button */
+            border: none; /* Remove the default border of the search button */
+            border-radius: 20px; /* Make the corners of the search button rounded */
+            color: white; /* Set the text color of the search button to white */
+            font-size: 18px; /* Set the font size of the search button text */
+            cursor: pointer; /* Change the cursor to a pointer when hovering over the search button */
+            background-color: purple; /* Set the background color of the search button to purple */
+        }
+
+        .search-button:hover {
+            transform: scale(1.1); /* Make the search button slightly larger when hovering over it */
+            box-shadow: 0 0 10px black; /* Add a shadow effect to the search button when hovering over it */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="search">
+            <input class="search-bar" type="search" placeholder="Enter your query here..."> <!-- This is the search bar -->
+            <button class="search-button">Search</button> <!-- This is the search button -->
+        </div>
+    </div>
+</body>
+</html>

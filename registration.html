@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* This is the CSS code to style the HTML elements */
+        body {
+            background-color: lightblue; /* Set the background color of the page */
+            font-family: Arial, sans-serif; /* Set the font of the text */
+        }
+
+        .container {
+            width: 80%; /* Set the width of the container */
+            margin: 0 auto; /* Center the container horizontally */
+        }
+
+        .form {
+            display: flex; /* Use flexbox layout for the form */
+            flex-direction: column; /* Arrange the form elements vertically */
+            justify-content: center; /* Align the form elements horizontally */
+            align-items: center; /* Align the form elements vertically */
+            height: 100vh; /* Set the height of the form container to fill the viewport */
+        }
+
+        .form-group {
+            width: 500px; /* Set the width of each form group */
+            margin: 10px; /* Add some margin around each form group */
+        }
+
+        .label {
+            display: block; /* Make the label element a block-level element */
+            margin-bottom: 5px; /* Add some margin below each label element */
+            font-weight: bold; /* Make the label text bold */
+        }
+
+        .input {
+            width: 100%; /* Set the width of each input element to fill its parent element */
+            height: 30px; /* Set the height of each input element */
+            padding: 5px; /* Add some padding inside each input element */
+            border: none; /* Remove the default border of each input element */
+            border-radius: 10px; /* Make the corners of each input element rounded */
+            font-size: 16px; /* Set the font size of each input element */
+        }
+
+        .fieldset {
+            border: none; /* Remove the default border of the fieldset element */
+        }
+
+        .legend {
+            font-weight: bold; /* Make the legend text bold */
+        }
+
+        .radio-group {
+            display: flex; /* Use flexbox layout for the radio group */
+            justify-content: space-between; /* Distribute the radio buttons evenly horizontally */
+        }
+
+        .radio-label {
+            display: flex; /* Use flexbox layout for each radio label */
+            align-items: center; /* Align the radio button and text vertically */
+        }
+
+        .radio-input {
+            margin-right: 5px; /* Add some margin between the radio button and text */
+        }
+
+        .button {
+            width: 200px; /* Set the width of the button element */
+            height: 40px; /* Set the height of the button element */
+            margin-top: 20px; /* Add some margin above the button element */
+            border: none; /* Remove the default border of the button element */
+            border-radius: 20px; /* Make the corners of the button element rounded */
+            color: white; /* Set the text color of the button element to white */
+            font-size: 18px; /* Set the font size of the button text */
+            cursor: pointer; /* Change the cursor to a pointer when hovering over the button element */
+            background-color: orange; /* Set the background color of the button element to orange */
+        }
+
+        .button:hover {
+            transform: scale(1.1); /* Make the button slightly larger when hovering over it */
+            box-shadow: 0 0 10px black; /* Add a shadow effect to the button when hovering over it */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form class="form" action="register.php" method="post">
+            <div class="form-group">
+                <label class="label" for="name">Name</label> <!-- This is a label for name input -->
+                <input class="input" type="text" id="name" name="name" placeholder="Enter your name here..."> <!-- This is an input for name -->
+            </div>
+            
+             <div class="form-group">
+                <label class="label" for="roll-number">Roll Number</label> <!-- This is a label for roll number input -->
+                <input class="input" type="text" id="roll-number" name="roll-number" placeholder="Enter your roll number here..."> <!-- This is an input for roll number -->
+            </div>
+
+            <div class="form-group">
+                <label class="label" for="branch">Branch</label> <!-- This is a label for branch input -->
+                <input class="input" type="text" id="branch" name="branch" placeholder="Enter your branch here..."> <!-- This is an input for branch -->
+            </div>
+
+            <div class="form-group">
+                <label class="label" for="email">Email</label> <!-- This is a label for email input -->
+                <input class="input" type="email" id="email" name="email" placeholder="Enter your email here..."> <!-- This is an input for email -->
+            </div>
+            <div class="form-group">
+                <label class="label" for="mobile-number">Mobile Number</label> <!-- This is a label for mobile number input -->
+                <input class="input" type="tel" id="mobile-number" name="mobile-number" placeholder="Enter your mobile number here..." pattern="[0-9]{10}" required> <!-- This is an input for mobile number -->
+            </div>
+            
+
+            <fieldset class="fieldset">
+                <legend class="legend">Select the branch</legend> <!-- This is a legend for the radio buttons -->
+                <div class="radio-group">
+                    <label class="radio-label" for="cse"> <!-- This is a label for the cse radio button -->
+                        <input class="radio-input" type="radio" id="cse" name="branch-radio" value="cse"> <!-- This is a radio button for cse -->
+                        CSE
+                    </label>
+                    <label class="radio-label" for="mech"> <!-- This is a label for the mech radio button -->
+                        <input class="radio-input" type="radio" id="mech" name="branch-radio" value="mech"> <!-- This is a radio button for mech -->
+                        MECH
+                    </label>
+                    <label class="radio-label" for="civil"> <!-- This is a label for the civil radio button -->
+                        <input class="radio-input" type="radio" id="civil" name="branch-radio" value="civil"> <!-- This is a radio button for civil -->
+                        CIVIL
+                    </label>
+                    <label class="radio-label" for="ai"> <!-- This is a label for the ai radio button -->
+                        <input class="radio-input" type="radio" id="ai" name="branch-radio" value="ai"> <!-- This is a radio button for ai -->
+                        AI
+                    </label>
+                </div>
+            </fieldset>
+
+            <button class="button">Register</button> <!-- This is the register button -->
+        </form>
+    </div>
+</body>
+</html>
